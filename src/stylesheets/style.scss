@@ -1,31 +1,17 @@
-@import '~normalize.css/normalize.css';
-@import './base';
 @import './media';
 @import './fonts';
 
+// bootstrap
+
+@import './vars';
+@import '../../node_modules/bootstrap/scss/bootstrap';
+
 // custom styles
 
-html {
-  height: 100%;
+section.lead {
+  background-color: $c-light-main;
 }
 
-body {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  min-height: 100%;
-}
-
-a {
-  position: relative;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: inline-block;
-
-  img {
-    display: inline-block;
-    vertical-align: middle;
-    width: 80px;
-  }
+.c-secondary {
+  color: $c-typo-secondary;
 }
