@@ -7,9 +7,20 @@
 @import '../../node_modules/bootstrap/scss/bootstrap';
 
 // custom styles
+@import './header';
 
-section.lead {
-  background-color: $c-light-main;
+// stick to bottom footer
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+.footer {
+  grid-row-start: 2;
+  grid-row-end: 3;
 }
 
 .c-secondary {
