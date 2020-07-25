@@ -7,6 +7,10 @@ const development = {
     new HtmlWebpackPlugin({
       template: 'index.html',
     }),
+    new HtmlWebpackPlugin({
+      filename: 'results.html',
+      template: 'results.html',
+    }),
   ],
   devtool: 'inline-source-map',
 };
