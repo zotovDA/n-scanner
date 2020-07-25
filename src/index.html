@@ -45,10 +45,9 @@
             </div>
 
             <button
-              id="responsiveNavOpen"
               style="border: none;"
               type="button"
-              class="navbar-toggler"
+              class="navbar-toggler js-responsive-nav-open"
             >
               <svg class="bi" width="32" height="32" fill="currentColor">
                 <use xlink:href="bootstrap-icons.svg#list" />
@@ -64,5 +63,36 @@
     <footer class="footer">
       <p class="text-center">Developed by <a href="zotov.one" target="_blank">ZotovDA</a></p>
     </footer>
+
+    <!-- Fixed elements: modals, responsive menu and etc. -->
+    <div id="responsive-menu" class="responsive-menu-wrapper js-responsive-nav-close">
+      <div class="responsive-menu-container bg-dark">
+        <nav class="responsive-menu-nav text-center">
+          <a class="responsive-menu-nav__item text-light disabled" tabindex="-1" href="javascript:void(0);"
+            >Главная</a
+          >
+          <a class="responsive-menu-nav__item text-light" href="/results.html">Результаты</a>
+        </nav>
+
+        <div class="mt-auto">
+          <img
+            src="images/logo.png"
+            alt=""
+            loading="lazy"
+            width="38"
+            height="38"
+            style="opacity: 0.5;"
+          />
+        </div>
+
+        <div class="responsive-menu-close">
+          <button type="button" class="btn js-responsive-nav-close">
+            <svg class="bi text-light" width="32" height="32" fill="currentColor">
+              <use xlink:href="bootstrap-icons.svg#x" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

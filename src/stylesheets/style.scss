@@ -23,6 +23,10 @@ body {
   grid-row-end: 3;
 }
 
+a.disabled {
+  opacity: 0.65;
+}
+
 .c-secondary {
   color: $c-typo-secondary;
 }
