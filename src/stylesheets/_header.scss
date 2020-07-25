@@ -16,7 +16,12 @@
 
 .responsive-menu {
   &-wrapper {
-    display: none;
+    &:not(.show) {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+    transition: opacity $transition;
 
     position: fixed;
     left: 0;
@@ -28,12 +33,18 @@
     z-index: 1500;
   }
 
+  &-wrapper.show &-container {
+    transform: translateX(0);
+    transition: transform $transition;
+  }
+
   &-container {
     position: relative;
 
     float: right;
     width: 80%;
     height: 100%;
+    transform: translateX(100%);
 
     padding: 60px 20px 20px;
 
