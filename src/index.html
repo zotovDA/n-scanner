@@ -15,17 +15,87 @@
     <meta property="og:url" content="" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="N-SCANNER" />
-    <meta
-      property="og:description"
-      content="Service that helps you to find apartaments"
-    />
+    <meta property="og:description" content="Service that helps you to find apartaments" />
     <meta property="og:image" content="https://webpack.js.org/icon_192x192.png" />
   </head>
 
   <body>
-    <a href="/" class="logo">
-      <img src="images/logo.png" alt="Webpack" />
-    </a>
-    <h1>Here we go</h1>
+    <main>
+      <header>
+        <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+          <div class="container">
+            <a href="javascript:void(0)" tabindex="-1" class="navbar-brand">
+              <img src="images/logo.png" alt="" loading="lazy" class="logo" />
+            </a>
+
+            <div class="navbar-collapse collapse">
+              <!-- Don't forget to edit responsive nav too -->
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a
+                    href="/results.html"
+                    class="nav-link"
+                    data-toggle="tooltip"
+                    data-placement="right"
+                    title="Ссылка на страницу для тестовых целей"
+                    >Результаты</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <button
+              style="border: none;"
+              type="button"
+              class="navbar-toggler js-responsive-nav-open"
+            >
+              <svg class="bi" width="32" height="32" fill="currentColor">
+                <use xlink:href="bootstrap-icons.svg#list" />
+              </svg>
+            </button>
+          </div>
+        </nav>
+      </header>
+
+      <h1>Index page</h1>
+    </main>
+
+    <footer class="footer">
+      <p class="text-center">Developed by <a href="zotov.one" target="_blank">ZotovDA</a></p>
+    </footer>
+
+    <!-- Fixed elements: modals, responsive menu and etc. -->
+    <div id="responsive-menu" class="responsive-menu-wrapper js-responsive-nav-close">
+      <div class="responsive-menu-container bg-dark">
+        <nav class="responsive-menu-nav text-center">
+          <a
+            class="responsive-menu-nav__item text-light disabled"
+            tabindex="-1"
+            href="javascript:void(0);"
+            >Главная</a
+          >
+          <a class="responsive-menu-nav__item text-light" href="/results.html">Результаты</a>
+        </nav>
+
+        <div class="mt-auto">
+          <img
+            src="images/logo.png"
+            alt=""
+            loading="lazy"
+            width="38"
+            height="38"
+            style="opacity: 0.5;"
+          />
+        </div>
+
+        <div class="responsive-menu-close">
+          <button type="button" class="btn js-responsive-nav-close">
+            <svg class="bi text-light" width="32" height="32" fill="currentColor">
+              <use xlink:href="bootstrap-icons.svg#x" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

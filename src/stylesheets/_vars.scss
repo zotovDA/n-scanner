@@ -6,15 +6,25 @@ $c-typo-main: #333333;
 $c-typo-acsent: #015d77;
 $c-typo-secondary: #80aebb;
 
+$transition: 0.3s ease-in;
+
 // bootstrap customs
 $primary: $c-dark-main;
 $black: $c-typo-main;
+$dark: $c-main;
+$light: $c-light-main;
 $body-color: $c-typo-main;
 
 $font-family-sans-serif: 'Roboto', sans-serif;
 $font-family-monospace: 'Roboto', sans-serif;
 
 $headings-font-weight: 700;
+
+$navbar-padding-y: 1.25rem;
+$navbar-brand-margin-right: 2.25rem;
+
+$navbar-dark-color: rgba(white, 0.75);
+$navbar-dark-hover-color: white;
 
 $enable-shadows: true;
 $box-shadow: 0px 6px 20px rgba(1, 93, 119, 0.4);
