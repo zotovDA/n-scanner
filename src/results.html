@@ -58,7 +58,134 @@
         </nav>
       </header>
 
-      <h1>Results page</h1>
+      <section class="d-none d-md-block bg-light">
+        <div class="container">
+          <h1 class="text-center">Результаты</h1>
+          <!-- TODO: add filters -->
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="d-none d-md-block">
+            <div class="text-primary">
+              <span>Сортировать:</span>
+              <button type="button" class="btn btn-link ml-4">по убыванию цены</button>
+              <button type="button" class="btn btn-link ml-2 active">по возрастанию цены</button>
+            </div>
+
+            <table class="table results-table table-borderless text-center">
+              <colgroup>
+                <col width="200" />
+                <col width="60" />
+                <col width="100" />
+                <col width="140" />
+                <col width="60" />
+              </colgroup>
+              <thead>
+                <tr class="bg-dark text-light">
+                  <th>Цена</th>
+                  <th>Тип</th>
+                  <th>Фото</th>
+                  <th>Площадь</th>
+                  <th>Этаж</th>
+                  <th>Улица</th>
+                  <th>Материал</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr data-href="#">
+                  <td>850000</td>
+                  <td>2</td>
+                  <td></td>
+                  <td>54/0/821</td>
+                  <td>2</td>
+                  <td>Дворцовская</td>
+                  <td>Кирпич</td>
+                </tr>
+                <tr data-href="#">
+                  <td>850000</td>
+                  <td>2</td>
+                  <td><img class="results-image" src="http://unsplash.it/500/500" alt="" /></td>
+                  <td>54/0/821</td>
+                  <td>2</td>
+                  <td>Дворцовская</td>
+                  <td>Кирпич</td>
+                </tr>
+                <tr data-href="#">
+                  <td>850000</td>
+                  <td>2</td>
+                  <td><img class="results-image" src="http://unsplash.it/500/500" alt="" /></td>
+                  <td>54/0/821</td>
+                  <td>2</td>
+                  <td>Дворцовская</td>
+                  <td>Кирпич</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="d-md-none">
+            <h1 class="text-center mb-4">Результаты</h1>
+
+            <div class="results-mobile">
+              <div class="card mb-4">
+                <img class="card-img-top" src="http://unsplash.it/500/500?random" alt="" />
+                <div class="card-body">
+                  <div class="row mb-3">
+                    <div class="col-5 label">Цена:</div>
+                    <div class="col-7"><b>850 000 руб</b></div>
+                  </div>
+                  <div class="row mb-3">
+                    <div class="col-5 label">Улица:</div>
+                    <div class="col-7">850 000 руб</div>
+                  </div>
+                  <div class="row mb-3">
+                    <div class="col-5 label">Площадь:</div>
+                    <div class="col-7">850 000 руб</div>
+                  </div>
+                  <div class="row mb-4">
+                    <div class="col-5 label">Этаж:</div>
+                    <div class="col-7">850 000 руб</div>
+                  </div>
+
+                  <a href="#" target="_blank" rel="noopener noreferrer"
+                    >Подробнее
+                    <svg class="bi" width="32" height="32" fill="currentColor">
+                      <use xlink:href="bootstrap-icons.svg#arrow-right" /></svg
+                  ></a>
+                </div>
+              </div>
+              <div class="card mb-4">
+                <img class="card-img-top" src="http://unsplash.it/500/500?random" alt="" />
+                <div class="card-body">
+                  <div class="row mb-3">
+                    <div class="col-5 label">Цена:</div>
+                    <div class="col-7"><b>850 000 руб</b></div>
+                  </div>
+                  <div class="row mb-3">
+                    <div class="col-5 label">Улица:</div>
+                    <div class="col-7">850 000 руб</div>
+                  </div>
+                  <div class="row mb-3">
+                    <div class="col-5 label">Площадь:</div>
+                    <div class="col-7">850 000 руб</div>
+                  </div>
+                  <div class="row mb-4">
+                    <div class="col-5 label">Этаж:</div>
+                    <div class="col-7">850 000 руб</div>
+                  </div>
+
+                  <a href="#" target="_blank" rel="noopener noreferrer"
+                    >Подробнее
+                    <svg class="bi" width="32" height="32" fill="currentColor">
+                      <use xlink:href="bootstrap-icons.svg#arrow-right" /></svg
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
